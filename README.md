@@ -14,7 +14,7 @@ Simple HttpClient for interacting with TibetSwap.io API, a port of the client th
 Add configuration to appsettings.json
 
 TibetSwap Mainnet
-```
+```JSON
   "TibetSwap": {
     "ApiEndPoint": "https://api.v2.tibetswap.io",
     "TokensEndpoint": "/tokens",
