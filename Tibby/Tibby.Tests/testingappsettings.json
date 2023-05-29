@@ -1,0 +1,12 @@
+{
+  "TibetSwap": {
+    "ApiEndPoint": "https://api.v2-testnet10.tibetswap.io",
+    "TokensEndpoint": "/tokens",
+    "TokenPairEndpoint": "/pair",
+    "QuoteEndpoint": "/quote",
+    "RouterEndpoint": "/router",
+    "TokenEndpoint": "/token",
+    "OfferEndpoint": "/offer",
+    "TibetDevFeeWalletAddress" :  "txch1hm6sk2ktgx3u527kp803ex2lten3xzl2tpjvrnc0affvx5upd6mqnn6lxh"
+  }
+}

@@ -7,14 +7,16 @@ namespace Tibby.Extensions;
 
 public static class Extensions
 {
-    public static void AddTibbyClient(this IServiceCollection services, IOptions<TibetSwapOptions> tibetSwapOptions)
+    public static void AddTibbyClient(this IServiceCollection services, TibetSwapOptions tibetSwapOptions)
     {
-        if (tibetSwapOptions?.Value == null)
+        if (tibetSwapOptions == null)
             throw new ArgumentException("TibetSwap Configuration section missing!");
+        if (string.IsNullOrEmpty(tibetSwapOptions?.ApiEndpoint))
+            throw new ArgumentException("TibetSwap.ApiEndpoint not defined");
         
         services.AddHttpClient<ITibbyClient, TibbyClient>(c =>
         {
-            c.BaseAddress = new System.Uri(tibetSwapOptions.Value.ApiEndpoint);
+            c.BaseAddress = new System.Uri(tibetSwapOptions.ApiEndpoint);
         });
     }
 }
