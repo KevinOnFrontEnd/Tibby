@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tibby", "Tibby\Tibby.csproj", "{99740381-4957-48C3-8583-ACE6DA2AC2DD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tibby.Tests", "Tibby.Tests\Tibby.Tests.csproj", "{50C2F6A2-73EC-4E25-A623-5CA9924CD0B3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{99740381-4957-48C3-8583-ACE6DA2AC2DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99740381-4957-48C3-8583-ACE6DA2AC2DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99740381-4957-48C3-8583-ACE6DA2AC2DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99740381-4957-48C3-8583-ACE6DA2AC2DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50C2F6A2-73EC-4E25-A623-5CA9924CD0B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50C2F6A2-73EC-4E25-A623-5CA9924CD0B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50C2F6A2-73EC-4E25-A623-5CA9924CD0B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50C2F6A2-73EC-4E25-A623-5CA9924CD0B3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
