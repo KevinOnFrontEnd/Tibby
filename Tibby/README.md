@@ -1,0 +1,1 @@
+Tibby is the unoffial TibetSwap.io client enabling .NET developers to interact with TibetSwaps public AMM API.
