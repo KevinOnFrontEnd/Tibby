@@ -41,7 +41,8 @@ Add configuration to appsettings.json
 ```
 
 # Usage
-Inject ITibbyClient into required class.
+- Import Tibby.Models
+- Inject ITibbyClient into required class.
 
 # Methods
 - GetPair(string pair).  **/**
