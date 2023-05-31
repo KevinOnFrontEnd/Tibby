@@ -5,8 +5,8 @@ Simple HttpClient for interacting with TibetSwap.io API documented at https://ap
 # Setup
 ```C#
 {
-var tibetSwapOptions = builder.Configuration.GetSection("TibetSwap").Get<TibetSwapOptions>();
-builder.Services.AddTibbyClient(tibetSwapOptions);
+  var tibetSwapOptions = builder.Configuration.GetSection("TibetSwap").Get<TibetSwapOptions>();
+  builder.Services.AddTibbyClient(tibetSwapOptions);
 }
 ```
 
