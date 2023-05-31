@@ -34,15 +34,15 @@ public class TibbyClient : ITibbyClient
       return (quote, response);
     }
 
-    public async Task<(OfferResponse, HttpResponseMessage)> PostOffer(string pairId, string offer, double donationAmount, string action = "SWAP")
+    public async Task<(OfferResponse, HttpResponseMessage)> PostOffer(string pairId, string offer, double donationAmount, string[] donationAddresses, string[] donationWeights)
     {
       var postedOffer = new
       {
         offer = offer,
         action = "SWAP",
         total_donation_amount = (int) Math.Floor(donationAmount),
-        //donation_addresses= new []{_options.Value.TibetDevFeeWalletAddress, _options.Value.SwapHunterDevFeeWalletAddress},
-        donation_weights = new []{1,1},
+        donation_addresses= donationAddresses,
+        donation_weights = donationWeights
       };
       
       var json = JsonConvert.SerializeObject(postedOffer);

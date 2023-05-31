@@ -30,11 +30,12 @@ public interface ITibbyClient
     /// Posts a generated chia offer for a token pair.
     /// </summary>
     /// <param name="pairId"></param>
-    /// <param name="offer"></param>
-    /// <param name="donationAmount"></param>
-    /// <param name="action"></param>
+    /// <param name="offer">Chia offer file as a string</param>
+    /// <param name="donationAmount">Donation amount</param>
+    /// <param name="donationAddresses">Addresses that split donation Fee</param>
+    /// <param name="donationWeights">Weight Distribution of donations/param>
     /// <returns></returns>
-    Task<(OfferResponse, HttpResponseMessage)> PostOffer(string pairId, string offer, double donationAmount, string action="SWAP");
+    Task<(OfferResponse, HttpResponseMessage)> PostOffer(string pairId, string offer, double donationAmount, string[] donationAddresses, string[] donationWeights);
     
     /// <summary>
     /// Returns Router
