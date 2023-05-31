@@ -1,5 +1,6 @@
 # Tibby
-Simple HttpClient for interacting with TibetSwap.io API, a port of the client that was created in https://github.com/KevinOnFrontEnd/SwapHunter
+Simple HttpClient for interacting with TibetSwap.io API documented at https://api.v2.tibetswap.io/docs#/default, a port of the client that was created in https://github.com/KevinOnFrontEnd/SwapHunter
+
 
 # Setup
 ```C#
@@ -23,7 +24,6 @@ Add configuration to appsettings.json
     "RouterEndpoint": "/router",
     "TokenEndpoint": "/token",
     "OfferEndpoint": "/offer",
-    "TibetDevFeeWalletAddress" :  "txch1hm6sk2ktgx3u527kp803ex2lten3xzl2tpjvrnc0affvx5upd6mqnn6lxh"
   }
 ```
 
@@ -37,12 +37,19 @@ Add configuration to appsettings.json
     "RouterEndpoint": "/router",
     "TokenEndpoint": "/token",
     "OfferEndpoint": "/offer",
-    "TibetDevFeeWalletAddress" :  "txch1hm6sk2ktgx3u527kp803ex2lten3xzl2tpjvrnc0affvx5upd6mqnn6lxh"
   }
 ```
 
 # Usage
 Inject ITibbyClient into required class.
 
+# Methods
+- GetPair(string pair).  **/**
+- GetQuote(string pair, double amount_in, bool xch_is_input = true, bool estimate_fee = true).  **/quote/{pair}**
+- PostOffer(string pairId, string offer, double donationAmount, string[] donationAddresses, string[] donationWeights). - **/offer/{pair}**
+- GetRouter() - **/router**
+- GetToken(string assetId). - **/toke/{assetId}**
+- GetTokenPairs(). - **/Pairs**
+   
 
 
