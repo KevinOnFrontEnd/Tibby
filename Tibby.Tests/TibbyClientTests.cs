@@ -32,6 +32,6 @@ public class TibbyClientTests : TestBase
         var (pairs, _) = await TibbyClient.GetTokenPairs();
         
         // assert
-        var s = pairs;
+        Assert.NotEmpty(pairs);
     }
 }

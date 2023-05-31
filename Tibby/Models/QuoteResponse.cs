@@ -9,5 +9,6 @@
         public string asset_id { get; set; }
         public double input_reserve { get; set; }
         public double output_reserve { get; set; }
+        public double price_impact { get; set; }
     }
 }
