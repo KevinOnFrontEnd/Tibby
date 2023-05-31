@@ -7,8 +7,10 @@ namespace Tibby.Extensions;
 
 public static class Extensions
 {
-    public static void AddTibbyClient(this IServiceCollection services, TibetSwapOptions tibetSwapOptions)
+    public static void AddTibbyClient(this IServiceCollection services)
     {
+        var serviceProvider = services.BuildServiceProvider();
+        var tibetSwapOptions = serviceProvider.GetRequiredService<IOptions<TibetSwapOptions>>()?.Value;
         if (tibetSwapOptions == null)
             throw new ArgumentException("TibetSwap Configuration section missing!");
         if (string.IsNullOrEmpty(tibetSwapOptions?.ApiEndpoint))
