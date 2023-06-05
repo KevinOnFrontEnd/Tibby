@@ -8,7 +8,7 @@ public class TibbyClientTests : TestBase
     {
     }
     
-    [Fact]
+    [Fact(Skip = "TibetSwap Testnet10 api is down")]
     public async Task calling_router_endpoint_returns_ok()
     {
         // arrange
@@ -23,7 +23,7 @@ public class TibbyClientTests : TestBase
         Assert.Equal("2223a2a9c037ae5844f7fbf2ecfa16740e31bd2d3ffe2f4a76006e266947776f",router.Current_Id);
     }
     
-    [Fact]
+    [Fact(Skip = "TibetSwap Testnet10 api is down")]
     public async Task calling_tokenpairs_returns_ok()
     {
         // arrange
