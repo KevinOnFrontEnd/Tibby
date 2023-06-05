@@ -49,6 +49,14 @@ Add configuration to appsettings.json
 - GetRouter() - **/router**
 - GetToken(string assetId). - **/toke/{assetId}**
 - GetTokenPairs(). - **/Pairs**
+
+# Helper Methods
+The following methods are useful when accepting an offer on TibetSwap (e.g. posting to offers endpoint).
+
+ConvertToMojos - Converts from XCH to Mojos
+GetInputPrice - Returns the amount of tokens your xch would return taking into account the  Liquidity fee of 0.7%.
+getOutputPrice - Returns the amount of xch amount that is required to get your desired token amount taking into account the liquidity fee of 0.7%.
+
    
 
 
