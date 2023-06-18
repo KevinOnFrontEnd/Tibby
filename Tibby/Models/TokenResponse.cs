@@ -7,5 +7,6 @@
     public string name { get; set; }
     public string short_name { get; set; }
     public bool verified { get; set; }
+    public string image_url { get; set; }
   }
 }
