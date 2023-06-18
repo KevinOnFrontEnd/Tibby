@@ -41,7 +41,6 @@ public class TestBase : IClassFixture<TibbyTestFixture>
             {
                 services.Configure<TibetSwapOptions>(hostContext.Configuration.GetSection("TibetSwap"));
                 services.AddTibbyClient();
-                services.Configure<TibetSwapOptions>(hostContext.Configuration.GetSection("TibetSwap"));
             });
         });
     }
