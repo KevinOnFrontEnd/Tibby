@@ -18,6 +18,7 @@ public class TibbyClient : ITibbyClient
     { 
       _options = options;
       _client = httpClient;
+      _logger = logger;
     }
 
     public async Task<(TokenPairResponse,HttpResponseMessage)> GetPair(string pair)
